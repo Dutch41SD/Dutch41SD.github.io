@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>PHaMOS Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+  </head>
+  <body>
+
+    <!-- navigation bar -->
+    <nav>
+      
+      <!-- The Logo on the left -->
+      <img src="SVG/PHaMOS-logo-w.svg"  width="100">
+
+      <!-- The Links on the right -->
+      <div>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#logos">Logos</a>
+        <a href="#it">IT Projects</a>
+        <a href="#contact">Contact</a>
+      </div>
+
+    </nav>
+
+    <header id="home" class="hero">
+      
+      <div class="hero-container">
+        
+        <div class="hero-logo">
+          <img src="SVG/PA-logo-w.svg" alt="Pa Logo">
+        </div>
+
+        <div class="hero-typography">
+          <h1>GRAPHIC DESIGNER<br><span class="orange-text">&</span> IT CONSULTANT</h1>
+        </div>
+
+      </div>
+
+    </header>
+
+    <section id="about" class="about-section">
+      
+      <div class="about-container">
+        
+        <div class="about-image">
+          <img src="SVG/phillip-profile.jpg" alt="Phillip - Designer and IT Consultant">    
+        </div>
+
+        <div class="about-text">
+          <h2>About Me</h2>
+          <p>I am a graphic designer from Texas with a concentration in logo design and IT consulting. I approach every project with a creative eye for detail, blending visual aesthetics with technical logic to build systems that just make sense.</p>
+          <p>When I step away from the keyboard, my creative process continues offline. My hobbies include world-building for high-fantasy novels, traditional book binding, and painting in watercolor.</p>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!--Logo Section-->
+
+    <section id="logos" class="logos-section">
+      
+      <h2>Logos</h2>
+      
+      <div class="logo-grid">
+        
+        <!-- Logo 1: NovaCare -->
+        <div class="logo-item">
+          <img src="SVG/novacare-logo.svg" alt="NovaCare Brand Logo">
+          <!-- The hidden overlay -->
+          <div class="logo-overlay">
+            <h3>NovaCare</h3>
+            <p>Logo Redesign</p>
+          </div>
+        </div>
+
+        <!-- Logo 2: GF Initials -->
+        <div class="logo-item">
+          <img src="SVG/gf-logo.svg" alt="GF Personal Logo">
+          <div class="logo-overlay">
+            <h3>GF Monogram</h3>
+            <p>Personal Monogram for a DJ</p>
+          </div>
+        </div>
+
+        <!-- Logo 3: Chef Logo -->
+        <div class="logo-item">
+          <img src="SVG/chef-logo.svg" alt="Chef Brand Logo">
+          <div class="logo-overlay">
+            <h3>Culinary Concept</h3>
+            <p>Absctact Pan Tossed Logo</p>
+          </div>
+        </div>
+
+        <!-- Logo 4: PHaMOS -->
+        <div class="logo-item">
+          <img src="SVG/phamos-monogram.svg" alt="PHaMOS Personal Logo">
+          <div class="logo-overlay">
+            <h3>PHaMOS</h3>
+            <p>My Personal logo Pa</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <section id="it" class="it-section">
+      
+        <!--IT Project section-->>
+
+      <h2>IT Projects</h2>
+      
+      <div class="app-window">
+   <div class="window-bar">
+     <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+   </div>
+   <div class="window-content">
+
+     <div class="app-split">
+
+       <div class="app-interactive">
+         <img src="SVG/tacocat-logo.svg" alt="TacoCat Logo" class="app-logo-left">
+         <h3>TacoCat</h3>
+         <div class="app-ui">
+           <input type="text" id="tc-input" placeholder="Type a phrase...">
+           <button id="tc-btn" class="btn-small">Check</button>
+         </div>
+         <p id="tc-result" class="result-text">&nbsp;</p>
+       </div>
+
+       <div class="app-explanation">
+         <p><strong>The Goal:</strong> A palindrome checker built on strict data sanitization.</p>
+         <p><strong>How it works:</strong> The JavaScript engine uses Regular Expressions (RegEx) to strip away all spaces and punctuation. It then converts the clean text to lowercase, splits it, reverses it, and compares it to the original input to verify a perfect match.</p>
+       </div>
+
+     </div>
+
+   </div>
+ </div>
+
+ <div class="app-window">
+   <div class="window-bar">
+     <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+   </div>
+   <div class="window-content">
+
+     <div class="app-split">
+
+       <div class="app-interactive">
+         <img src="SVG/loanshark-logo.svg" alt="Loan Shark Logo" class="app-logo-left">
+         <h3>Loan Shark</h3>
+         <div class="app-ui vertical-ui">
+           <input type="number" id="ls-amount" placeholder="Loan Amount ($)">
+           <input type="number" id="ls-rate" placeholder="Interest Rate (%)">
+           <input type="number" id="ls-months" placeholder="Term (Months)">
+           <button id="ls-btn" class="btn-small">Calculate</button>
+         </div>
+         <p id="ls-result" class="result-text">&nbsp;</p>
+       </div>
+
+       <div class="app-explanation">
+         <p><strong>The Goal:</strong> A financial calculator handling complex state management.</p>
+         <p><strong>How it works:</strong> The script intercepts raw text inputs and converts them into strict numerical floats. It then applies standard amortization formulas to calculate monthly payments, while simultaneously running logic to guard against blank or invalid data.</p>
+       </div>
+
+     </div>
+
+   </div>
+ </div>
+
+    </section>
+
+    <section id="contact" class="contact-section">
+      
+      <div class="contact-container">
+        <h2>Let's Work Together</h2>
+        <p>Whether you need a brand identity, an IT logic solution, or just want to chat about high-fantasy and writing, drop me a message below!</p>
+        
+        <form action="https://formspree.io/f/YOUR_ID_HERE" method="POST" class="contact-form">
+          
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" id="name" name="name" placeholder="John Doe" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="john@example.com" required>
+          </div>
+          
+          <div class="form-group">
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" placeholder="How can I help you?" required></textarea>
+          </div>
+          
+          <button type="submit" class="btn-large">Send Message</button>
+          
+        </form>
+      </div>
+
+    </section>
+
+    <script src="script.js"></script>
+    
+  </body>
+</html>

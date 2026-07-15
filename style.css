@@ -1,0 +1,513 @@
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: #121212; /* Dark Charcoal */
+  margin: 0; /* Removes standard browser spacing */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Clean, modern font */
+}
+
+/* The Header Box */
+nav {
+  background-color: #1A1A1A; /* Slightly lighter charcoal for the header */
+  height: 50px;
+  display: flex; /* This allows us to push things left and right */
+  justify-content: space-between; /* Puts logo on left, links on right */
+  align-items: center; /* Centers everything vertically */
+  padding: 0 50px; /* Adds 50px of breathing room on the left and right edges */
+  border-bottom: 1px solid #333333; /* A subtle line separating header from the page */
+}
+
+/* The Text Links */
+nav a {
+  color: #FFFFFF; /* Pure White text */
+  text-decoration: none; /* Removes the ugly blue underlines */
+  margin-left: 40px; /* Spaces the links out from each other */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* The Text Links */
+nav a {
+  color: #FFFFFF; /* Pure White text */
+  text-decoration: none; 
+  margin-left: 40px; 
+  font-size: 16px;
+  font-weight: bold;
+  
+  /* Smooth 0.3-second fade to the color change */
+  transition: color 0.3s ease; 
+}
+
+/* The Hover Effect */
+nav a:hover {
+  color: #F59E0B; 
+}
+
+/* The Home Section */
+.hero {
+  height: 700px;
+  display: flex;
+  justify-content: center; 
+  align-items: center; 
+  
+  /* Background Image Code Turned ON */
+  background-image: url('SVG/hero-background.svg'); 
+  background-position: right center; 
+  background-repeat: no-repeat; 
+  background-size: 50%; 
+}
+
+/* Invisible box holding two columns */
+.hero-container {
+  display: flex; 
+  justify-content: center;
+  align-items: center; 
+  gap: 80px; 
+  max-width: 1200px;
+  width: 100%;
+}
+
+.hero-logo img {
+  width: 100%;
+  max-width: 200px; 
+  height: auto;
+  display: block;
+}
+
+.hero-typography h1 {
+  color: #FFFFFF;
+  font-size: 56px; /* Massive, bold text */
+  font-weight: 800; /* Extra bold */
+  line-height: 1.1; /* Keeps the two lines stacked closely together */
+  margin: 0;
+}
+
+/* This targets just the & */
+.orange-text {
+  color: #F59E0B; 
+}
+
+/* The About Section */
+.about-section {
+  background-color: #1A1A1A; /* Slightly lighter charcoal to separate it from the Home section */
+  padding: 100px 50px;
+  display: flex;
+  justify-content: center;
+}
+
+.about-container {
+  display: flex;
+  align-items: center;
+  gap: 60px; /* Space between your photo and the text */
+  max-width: 1000px; 
+  width: 100%;
+}
+
+.about-image img {
+  width: 100%;
+  max-width: 350px;
+  border-radius: 12px; /* Soft, friendly corners for your photo */
+  border: 2px solid #333333; /* A subtle border frame */
+  display: block;
+}
+
+.about-text {
+  flex: 1; /* Fill all the remaining space on the right */
+}
+
+.about-text h2 {
+  color: #F59E0B; 
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  color: #CCCCCC; 
+  font-size: 18px;
+  line-height: 1.6; /* Adds breathing room between the lines of text */
+  margin-bottom: 20px;
+}
+
+/* The Logos Section */
+.logos-section {
+  padding: 100px 50px;
+  background-color: #121212; 
+}
+
+.logos-section h2 {
+  color: #F59E0B;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+/* The 2x2 Grid */
+.logo-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 40px; 
+  max-width: 900px; 
+  margin: 0 auto; 
+}
+
+/* The Individual Logo Boxes */
+.logo-item {
+  background-color: #1A1A1A;
+  padding: 60px; 
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative; 
+  overflow: hidden; 
+  border: 1px solid #333333;
+}
+
+.logo-item img {
+  max-width: 100%;
+  height: auto;
+  transition: all 0.4s ease; /* Smooth transition for the image */
+}
+
+/* The Secret Overlay Box */
+.logo-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(245, 158, 11, 0.95); /* Translucent version of signature orange */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+  /* The Magic Hiding Spell */
+  opacity: 0; 
+  transform: translateY(20px); 
+  transition: all 0.3s ease; /* How fast the animation happens */
+}
+
+.logo-overlay h3 {
+  color: #121212; /* Dark charcoal text to pop against the orange */
+  font-size: 28px;
+  margin: 0 0 10px 0;
+}
+
+.logo-overlay p {
+  color: #1A1A1A;
+  margin: 0;
+  font-weight: bold;
+}
+
+/* The Hover Effect Execution */
+.logo-item:hover .logo-overlay {
+  opacity: 1; /* Makes the overlay visible */
+  transform: translateY(0); /* Slides it back to the exact center */
+  cursor: pointer;
+}
+
+.logo-item:hover img {
+  transform: scale(0.9); 
+}
+
+/* The Logo Gallery */
+.gallery-section {
+  padding: 100px 50px;
+  background-color: #121212; 
+}
+
+.gallery-section h2 {
+  color: #F59E0B; /* Signature Orange */
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+/* The Magic Grid */
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr); /* Creates 2 equal columns */
+  gap: 40px; /* The space between the boxes */
+  max-width: 1200px;
+  margin: 0 auto; /* Centers the whole grid on the page */
+}
+
+/* The Project Cards */
+.gallery-item {
+  background-color: #1A1A1A;
+  border-radius: 12px; /* Soft, modern corners */
+  overflow: hidden; /* Prevents the image from spilling out of the rounded corners */
+  position: relative;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* The Text Box inside the Card */
+.item-overlay {
+  background: #1A1A1A;
+  padding: 20px;
+  border-top: 1px solid #333333;
+}
+
+.item-overlay h3 {
+  color: #FFFFFF;
+  margin: 0 0 5px 0;
+  font-size: 24px;
+}
+
+.item-overlay p {
+  color: #F59E0B;
+  margin: 0;
+  font-size: 14px;
+}
+
+/* The IT Projects Section */
+.it-section {
+  padding: 100px 50px;
+  background-color: #1A1A1A; /* Alternates the background color */
+}
+
+.it-section h2 {
+  color: #F59E0B;
+  font-size: 36px;
+  text-align: center;
+  margin-top: 0;
+  margin-bottom: 60px;
+}
+
+.it-grid {
+  display: grid;
+  grid-template-columns: 1fr; /* This creates one wide column instead of two! */
+  gap: 200px; /* Added slightly more space between the stacked apps */
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+/* The Fake Application Windows */
+.app-window {
+  background-color: #121212;
+  border-radius: 10px;
+  width: 100%;
+  border: 1px solid #333333;
+  overflow: hidden; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.5); /* 3D drop shadow */
+}
+
+/* The top bar with the colored dots */
+.window-bar {
+  background-color: #2A2A2A;
+  padding: 10px 15px;
+  display: flex;
+  gap: 8px;
+}
+
+.dot {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+}
+
+.dot.red { background-color: #FF5F56; }
+.dot.yellow { background-color: #FFBD2E; }
+.dot.green { background-color: #27C93F; }
+
+.window-content {
+  padding: 30px;
+  text-align: center;
+}
+
+.window-content h3 {
+  color: #FFFFFF;
+  margin-top: 0;
+}
+
+.window-content p {
+  color: #CCCCCC;
+  font-size: 14px;
+}
+
+/* Inputs and Buttons inside the window */
+.app-ui {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 20px 0;
+}
+
+.app-ui input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #444;
+  background-color: #222;
+  color: white;
+}
+
+.btn-small {
+  background-color: #F59E0B;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+/* output text where the answer will go */
+.result-text {
+  font-family: monospace; 
+  color: #F59E0B !important;
+  min-height: 32px;
+}
+
+/* App Logos */
+.app-logo {
+  max-width: 150px; 
+  height: auto;
+  margin: 0 auto 20px auto; 
+  display: block;
+}
+
+/* Stacks inputs vertically */
+.vertical-ui {
+  flex-direction: column;
+  max-width: 200px;
+  margin: 20px auto;
+}
+
+/* Split-Screen Interior */
+.app-split {
+  display: flex;
+  align-items: center; /* Centers the left and right sides vertically */
+  gap: 40px;
+  text-align: left; 
+}
+
+.app-interactive {
+  flex: 1; 
+  border-right: 1px solid #333333; 
+  padding-right: 40px;
+  
+  /* Center text and content specifically in this left box */
+  text-align: center; 
+  padding-left: 20px; 
+}
+
+.app-explanation {
+  flex: 1; 
+}
+
+
+.app-logo-left {
+  max-width: 120px;
+  height: auto;
+  margin: 0 auto 15px auto; 
+  display: block;
+}
+
+/* Overrides the left-alignment to push inputs to the center */
+.app-window .app-ui {
+  justify-content: center; 
+}
+
+.app-window .vertical-ui {
+  align-items: center;
+  margin: 20px auto; 
+}
+
+
+/* The Contact Section */
+.contact-section {
+  padding: 100px 50px;
+  background-color: #121212; /* Alternates back to dark charcoal */
+  display: flex;
+  justify-content: center;
+}
+
+.contact-container {
+  max-width: 600px; 
+  width: 100%;
+  text-align: center;
+}
+
+.contact-container h2 {
+  color: #F59E0B;
+  font-size: 36px;
+  margin-top: 0;
+  margin-bottom: 15px;
+}
+
+.contact-container p {
+  color: #CCCCCC;
+  margin-bottom: 40px;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Form Layout */
+.contact-form {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  text-align: left; 
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.form-group label {
+  color: #FFFFFF;
+  font-size: 14px;
+  font-weight: bold;
+}
+
+/* The Input Boxes */
+.contact-form input,
+.contact-form textarea {
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #333333;
+  background-color: #1A1A1A;
+  color: #FFFFFF;
+  font-family: inherit; 
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+/* The Magic Focus Effect: Lights up orange when typing */
+.contact-form input:focus,
+.contact-form textarea:focus {
+  outline: none;
+  border-color: #F59E0B;
+  box-shadow: 0 0 8px rgba(245, 158, 11, 0.3);
+}
+
+/* The Submit Button */
+.btn-large {
+  background-color: #F59E0B;
+  color: #121212;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 8px;
+  font-weight: bold;
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  margin-top: 10px;
+}
+
+.btn-large:hover {
+  background-color: #D97706; 
+  transform: translateY(-2px); 
+}
