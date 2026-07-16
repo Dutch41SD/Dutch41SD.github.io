@@ -559,3 +559,30 @@ nav a:hover {
     padding: 60px 20px;
   }
 }
+
+/* The Footer */
+.site-footer {
+  background-color: #0A0A0A; /* A pure, deep black to anchor the page */
+  color: #888888; /* Subdued gray text so it isn't distracting */
+  text-align: center;
+  padding: 40px 20px;
+  border-top: 1px solid #222222; /* A subtle line separating it from the contact form */
+}
+
+.site-footer p {
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+.social-links a {
+  color: #FFFFFF;
+  text-decoration: none;
+  margin: 0 15px;
+  font-size: 14px;
+  font-weight: bold;
+  transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+  color: #F59E0B; /* Lights up orange on hover */
+}
