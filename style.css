@@ -407,7 +407,7 @@ nav a:hover {
 
 
 .app-logo-left {
-  max-width: 120px;
+  max-width: 165x;
   height: auto;
   margin: 0 auto 15px auto; 
   display: block;
@@ -510,4 +510,52 @@ nav a:hover {
 .btn-large:hover {
   background-color: #D97706; 
   transform: translateY(-2px); 
+}
+
+/* Mobile Responsiveness */
+@media (max-width: 768px) {
+  
+  /* Stack the Navigation Bar */
+  nav {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+  }
+
+  nav a {
+    margin-left: 0; /* Removes the desktop spacing */
+  }
+
+  /* Stack the IT Projects */
+  .app-split {
+    flex-direction: column; /* Changes from left-to-right to top-to-bottom */
+    text-align: center;
+  }
+
+  /* Adjust the Interactive Left Side */
+  .app-interactive {
+    border-right: none; /* Removes the vertical line */
+    border-bottom: 1px solid #333333; /* Adds a horizontal line underneath */
+    padding-right: 0;
+    padding-bottom: 30px;
+    padding-left: 0;
+    width: 100%;
+  }
+
+  /* Adjust the Explanation Text */
+  .app-explanation {
+    width: 100%;
+    padding-top: 10px;
+  }
+
+  /* Reduce the massive gap between apps for small screens */
+  .it-grid {
+    gap: 60px;
+  }
+  
+  /* Shrink the main padding so text doesn't hit the screen edges */
+  .it-section, .contact-section {
+    padding: 60px 20px;
+  }
 }
