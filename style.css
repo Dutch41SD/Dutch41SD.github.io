@@ -12,7 +12,7 @@ body {
 nav {
   background-color: #1A1A1A; /* Slightly lighter charcoal for the header */
   height: 50px;
-  display: flex; /* This allows us to push things left and right */
+  display: flex; /* This allows me to push things left and right */
   justify-content: space-between; /* Puts logo on left, links on right */
   align-items: center; /* Centers everything vertically */
   padding: 0 50px; /* Adds 50px of breathing room on the left and right edges */
@@ -240,7 +240,7 @@ nav a:hover {
 /* The Project Cards */
 .gallery-item {
   background-color: #1A1A1A;
-  border-radius: 12px; /* Soft, modern corners */
+  border-radius: 12px; 
   overflow: hidden; /* Prevents the image from spilling out of the rounded corners */
   position: relative;
 }
@@ -251,7 +251,7 @@ nav a:hover {
   display: block;
 }
 
-/* The Text Box inside the Card */
+/* Text Box inside the Card */
 .item-overlay {
   background: #1A1A1A;
   padding: 20px;
@@ -270,7 +270,7 @@ nav a:hover {
   font-size: 14px;
 }
 
-/* The IT Projects Section */
+/* IT Projects Section */
 .it-section {
   padding: 100px 50px;
   background-color: #1A1A1A; /* Alternates the background color */
@@ -286,8 +286,8 @@ nav a:hover {
 
 .it-grid {
   display: grid;
-  grid-template-columns: 1fr; /* This creates one wide column instead of two! */
-  gap: 200px; /* Added slightly more space between the stacked apps */
+  grid-template-columns: 1fr; /* Creates one wide column instead of two */
+  gap: 200px; /* Added space between the stacked apps */
   max-width: 1000px;
   margin: 0 auto;
 }
@@ -321,8 +321,12 @@ nav a:hover {
 .dot.green { background-color: #27C93F; }
 
 .window-content {
-  padding: 30px;
+  padding: 100px 40px; /* Vertical breathing room inside the window */
   text-align: center;
+  display: flex; 
+  flex-direction: column;
+  justify-content: center; /* Pushes the internal split-screen grid exactly to the vertical center */
+  min-height: 550px; /* Forces the window to be tall and spacious, regardless of screen size */
 }
 
 .window-content h3 {
