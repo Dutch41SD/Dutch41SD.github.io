@@ -86,7 +86,7 @@
 
         <!-- Logo 3: Chef Logo -->
         <div class="logo-item">
-          <img src="SVG/chef-logo.svg" alt="Chef Brand Logo">
+          <img src="SVG/chef-logo.svg" alt="Culinary concept logo featuring abstract pan tossing design">
           <div class="logo-overlay">
             <h3>Culinary Concept</h3>
             <p>Abstract Pan Tossed Logo</p>
@@ -95,7 +95,7 @@
 
         <!-- Logo 4: PHaMOS -->
         <div class="logo-item">
-          <img src="SVG/phamos-monogram.svg" alt="PHaMOS Personal Logo">
+          <img src="SVG/phamos-monogram.svg" alt="PHaMOS personal monogram logo with Pa design">
           <div class="logo-overlay">
             <h3>PHaMOS</h3>
             <p>My Personal logo 'Pa'</p>
@@ -108,69 +108,72 @@
 
     <section id="it" class="it-section">
       
-        <!--IT Project section-->
-
       <h2>IT Projects</h2>
       
-      <div class="app-window">
-   <div class="window-bar">
-     <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-   </div>
-   <div class="window-content">
+      <!-- THIS IS THE NEW WRAPPER THAT SPACES THE WINDOWS -->
+      <div class="it-grid">
+      
+        <!-- TacoCat Window -->
+        <div class="app-window">
+          <div class="window-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </div>
+          <div class="window-content">
 
-     <div class="app-split">
+            <div class="app-split">
+              <div class="app-interactive">
+                <!-- Case-sensitivity fix applied to the SVG folder below -->
+                <img src="SVG/tacocat-logo.svg" alt="TacoCat Logo" class="app-logo-left">
+                <h3>TacoCat</h3>
+                <div class="app-ui">
+                  <input type="text" id="tc-input" placeholder="Type a phrase...">
+                  <button id="tc-btn" class="btn-small">Check</button>
+                </div>
+                <p id="tc-result" class="result-text">&nbsp;</p>
+              </div>
 
-       <div class="app-interactive">
-         <img src="SVG/tacocat-logo.svg" alt="TacoCat Logo" class="app-logo-left">
-         <h3>TacoCat</h3>
-         <div class="app-ui">
-           <input type="text" id="tc-input" placeholder="Type a phrase...">
-           <button id="tc-btn" class="btn-small">Check</button>
-         </div>
-         <p id="tc-result" class="result-text">&nbsp;</p>
-       </div>
+              <div class="app-explanation">
+                <p><strong>The Goal:</strong> A palindrome checker built on strict data sanitization.</p>
+                <p><strong>How it works:</strong> This script takes a word or phrase typed by the user, strips away all formatting (like spaces, capital letters, and punctuation), reads it backward, and checks if it matches the original forward version. It then updates the screen to tell the user the result.</p>
+                <p><strong>Test it out:</strong> A man, a plan, a canal: Panama</p>
+              </div>
+            </div>
 
-       <div class="app-explanation">
-         <p><strong>The Goal:</strong> A palindrome checker built on strict data sanitization.</p>
-         <p><strong>How it works:</strong> This script takes a word or phrase typed by the user, strips away all formatting (like spaces, capital letters, and punctuation), reads it backward, and checks if it matches the original forward version. It then updates the screen to tell the user the result.</p>
-         <p><strong>Test it out:</strong> A man, a plan, a canal: Panama</p>
-       </div>
+          </div>
+        </div>
 
-     </div>
+        <!-- Loan Shark Window -->
+        <div class="app-window">
+          <div class="window-bar">
+            <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
+          </div>
+          <div class="window-content">
 
-   </div>
- </div>
+            <div class="app-split">
+              <div class="app-interactive">
+                <img src="SVG/loanshark-logo.svg" alt="Loan Shark Logo" class="app-logo-left">
+                <h3>Loan Shark</h3>
+                <div class="app-ui vertical-ui">
+                  <input type="number" id="ls-amount" placeholder="Loan Amount ($)">
+                  <input type="number" id="ls-rate" placeholder="Interest Rate (%)">
+                  <input type="number" id="ls-months" placeholder="Term (Months)">
+                  <button id="ls-btn" class="btn-small">Calculate</button>
+                </div>
+                <p id="ls-result" class="result-text">&nbsp;</p>
+              </div>
 
- <div class="app-window">
-   <div class="window-bar">
-     <span class="dot red"></span><span class="dot yellow"></span><span class="dot green"></span>
-   </div>
-   <div class="window-content">
+              <div class="app-explanation">
+                <p><strong>The Goal:</strong> A financial calculator handling complex state management.</p>
+                <p><strong>How it works:</strong> This script takes user inputs for a loan (the total amount, the interest rate, and the length of the loan in months), converts those text inputs into usable numbers, and runs them through a complex financial formula to output a precise monthly payment.</p>
+                <p><strong>Test it out:</strong> Standard Loan: $2500 | 6.5 | 30</p>
+              </div>
+            </div>
 
-     <div class="app-split">
+          </div>
+        </div>
 
-       <div class="app-interactive">
-         <img src="SVG/loanshark-logo.svg" alt="Loan Shark Logo" class="app-logo-left">
-         <h3>Loan Shark</h3>
-         <div class="app-ui vertical-ui">
-           <input type="number" id="ls-amount" placeholder="Loan Amount ($)">
-           <input type="number" id="ls-rate" placeholder="Interest Rate (%)">
-           <input type="number" id="ls-months" placeholder="Term (Months)">
-           <button id="ls-btn" class="btn-small">Calculate</button>
-         </div>
-         <p id="ls-result" class="result-text">&nbsp;</p>
-       </div>
-
-       <div class="app-explanation">
-         <p><strong>The Goal:</strong> A financial calculator handling complex state management.</p>
-         <p><strong>How it works:</strong> This script takes user inputs for a loan (the total amount, the interest rate, and the length of the loan in months), converts those text inputs into usable numbers, and runs them through a complex financial formula to output a precise monthly payment.</p>
-         <p><strong>Test it out:</strong> Standard Loan: $2500 | 6.5 | 30</p>
-       </div>
-
-     </div>
-
-   </div>
- </div>
+      <!-- THIS CLOSES THE NEW WRAPPER -->
+      </div>
 
     </section>
 
