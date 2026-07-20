@@ -525,6 +525,8 @@ nav a:hover {
     flex-direction: column;
     gap: 15px;
     margin-top: 15px;
+    height: auto; /* <-- This lets the box stretch vertically */
+    padding: 20px; /* <-- Adds breathing room so the logo doesn't hit the top */
   }
 
   nav a {
