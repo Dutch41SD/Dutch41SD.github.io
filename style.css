@@ -22,20 +22,10 @@ nav {
 /* The Text Links */
 nav a {
   color: #FFFFFF; /* Pure White text */
-  text-decoration: none; /* Removes the ugly blue underlines */
-  margin-left: 40px; /* Spaces the links out from each other */
-  font-size: 16px;
-  font-weight: bold;
-}
-
-/* The Text Links */
-nav a {
-  color: #FFFFFF; /* Pure White text */
   text-decoration: none; 
   margin-left: 40px; 
   font-size: 16px;
   font-weight: bold;
-  
   /* Smooth 0.3-second fade to the color change */
   transition: color 0.3s ease; 
 }
@@ -321,12 +311,12 @@ nav a:hover {
 .dot.green { background-color: #27C93F; }
 
 .window-content {
-  padding: 100px 40px; /* Vertical breathing room inside the window */
+  padding: 50px 40px; /* Vertical breathing room inside the window */
   text-align: center;
   display: flex; 
   flex-direction: column;
   justify-content: center; /* Pushes the internal split-screen grid exactly to the vertical center */
-  min-height: 550px; /* Forces the window to be tall and spacious, regardless of screen size */
+  min-height: 400px; /* Forces the window to be tall and spacious, regardless of screen size */
 }
 
 .window-content h3 {
@@ -399,7 +389,6 @@ nav a:hover {
   flex: 1; 
   border-right: 1px solid #333333; 
   padding-right: 40px;
-  
   /* Center text and content specifically in this left box */
   text-align: center; 
   padding-left: 20px; 
@@ -409,9 +398,8 @@ nav a:hover {
   flex: 1; 
 }
 
-
 .app-logo-left {
-  max-width: 165x;
+  max-width: 280px;
   height: auto;
   margin: 0 auto 15px auto; 
   display: block;
@@ -426,7 +414,6 @@ nav a:hover {
   align-items: center;
   margin: 20px auto; 
 }
-
 
 /* The Contact Section */
 .contact-section {
@@ -525,8 +512,8 @@ nav a:hover {
     flex-direction: column;
     gap: 15px;
     margin-top: 15px;
-    height: auto; /* <-- This lets the box stretch vertically */
-    padding: 20px; /* <-- Adds breathing room so the logo doesn't hit the top */
+    height: auto; /* This lets the box stretch vertically for the logo fix */
+    padding: 20px; /* Adds breathing room so the logo doesn't hit the edges */
   }
 
   nav a {
